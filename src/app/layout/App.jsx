@@ -5,11 +5,9 @@ import { Container } from 'semantic-ui-react';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import HomePage from '../../features/home/HomePage';
 import EventDetailedPage from '../../features/event/EventDetailed/EventDetailedPage';
-import PeopleDashboard from '../../features/user/PeopleDashboard/PeopleDashboard';
 import UserDetailedPage from '../../features/user/UserDetailed/UserDetailedPage';
 import SettingsDashboard from '../../features/user/Settings/SettingsDashboard';
 import EventForm from '../../features/event/EventForm/EventForm';
-import TestComponent from '../../features/testarea/TestComponent';
 import ModalManager from '../../features/modals/ModalManager';
 import { UserIsAuthenticated } from '../../features/auth/AuthWrapper';
 
@@ -29,10 +27,6 @@ class App extends Component {
                   <Route exact path='/events' component={EventDashboard} />
                   <Route path='/events/:id' component={EventDetailedPage} />
                   <Route
-                    path='/people'
-                    component={UserIsAuthenticated(PeopleDashboard)}
-                  />
-                  <Route
                     path='/profile/:id'
                     component={UserIsAuthenticated(UserDetailedPage)}
                   />
@@ -44,7 +38,6 @@ class App extends Component {
                     path={['/createEvent', '/manage/:id']}
                     component={UserIsAuthenticated(EventForm)}
                   />
-                  <Route path='/test' component={TestComponent} />
                 </Switch>
               </Container>
             </Fragment>

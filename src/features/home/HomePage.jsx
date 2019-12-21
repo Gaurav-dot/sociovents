@@ -19,7 +19,7 @@ const HomePage = ({history}) => {
             alt='logo'
             style={{ marginBottom: 12 }}
           />
-          Re-vents
+          Sociovents
         </Header>
         <Button size='huge' inverted onClick={() => history.push('/events')}>
           Get started

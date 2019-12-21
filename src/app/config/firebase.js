@@ -4,15 +4,16 @@ import 'firebase/database';
 import 'firebase/auth';
 import 'firebase/storage';
 
-const firebaseConfig = {
-    apiKey: "AIzaSyBrlxlOHWLtAxfKJwIp1lDwqp9RD44x-0c",
-    authDomain: "revents-2c2ee.firebaseapp.com",
-    databaseURL: "https://revents-2c2ee.firebaseio.com",
-    projectId: "revents-2c2ee",
-    storageBucket: "revents-2c2ee.appspot.com",
-    messagingSenderId: "218617380649",
-    appId: "1:218617380649:web:c1c7a50ffe8e5eb5"
-  };
+var firebaseConfig = {
+  apiKey: "AIzaSyCHqllPA8CW7HgcDVZSZnvAsib9BSZ0fJg",
+  authDomain: "sociovents.firebaseapp.com",
+  databaseURL: "https://sociovents.firebaseio.com",
+  projectId: "sociovents",
+  storageBucket: "sociovents.appspot.com",
+  messagingSenderId: "851987011884",
+  appId: "1:851987011884:web:2c77ffc2ec71165637b489",
+  measurementId: "G-MQSW8YBFYV"
+};
 
 firebase.initializeApp(firebaseConfig);
 firebase.firestore();
